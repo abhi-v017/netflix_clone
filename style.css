@@ -1,0 +1,359 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("imgs/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 685px;
+    position: relative;
+}
+
+.main .box {
+    height: 685px;
+    width: 100%;
+    position: absolute;
+    opacity: 0.68;
+    top: 0px;
+    background-color: black;
+}
+
+nav {
+    max-width: 75vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 136px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    z-index: 10;
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding: 0 30px;
+    height: calc(100% - 100px);
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    font-family: 'Open Sans', sans-serif;
+    padding: 3px 8px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+
+svg {
+    color: white;
+}
+
+.btn-red {
+    color: white;
+    border: rgba(248, 243, 243, 0.021);
+    background-color: red;
+    border-radius: 4px;
+    font-size: 24px;
+    padding: 10px 24px;
+}
+
+.btn-red:hover{
+    background-color: rgb(225, 16, 16);
+}
+.btn-red-sm {
+    background-color: rgba(248, 243, 243, 0.021);
+    color: white;
+    border: 1px solid rgb(77, 75, 75);
+}
+
+.btn-red-sec {
+    background-color: red;
+    color: white;
+    border: rgba(248, 243, 243, 0.021);
+}
+.btn-red-sec:hover{
+    background-color: rgb(225, 16, 16);
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 18px 120px 12px 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: rgb(0 0 0 / 75%);
+    font-size: medium;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid rgb(77, 75, 75);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 74vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    position: relative;
+    z-index: 10;
+    width: 580px;
+}
+
+.secImg video {
+    position: absolute;
+    right: 46px;
+    top: 104px;
+    width: 456px;
+}
+
+section.first>div :nth-child(1) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+section.first>div :nth-child(2) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.2s ease-out;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 18px;
+    max-width: 72vw;
+    margin: 10px auto;
+    background-color: #313030;
+    cursor: pointer;
+}
+
+.faqbox:hover {
+    color: white;
+    background-color: #494949;
+}
+
+.lastbtn {
+    margin: 40px;
+    text-align: center;
+}
+
+footer {
+    color: #d2cfcf;
+    max-width: 75vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 24px 0;
+}
+
+.footer a {
+    color: #d2cfcf;
+    font-weight: 300;
+    margin: 7px 0px;
+}
+
+.footer-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #d2cfcf;
+}
+
+.btn2 {
+    margin-top: 20px;
+}
+
+.end {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 1300px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 226px;
+    }
+
+    .secImg video {
+        width: 160px;
+        right: 32px;
+        top: 69px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 14px;
+        text-align: center;
+    }
+    section.first>div :nth-child(1){
+        font-size: 28px;
+        text-align: center;
+    }
+    section.first>div :nth-child(2){
+        font-size: 14px;
+        text-align: center;
+    }
+    .hero-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .faq h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+    .faqbox {
+        font-size: 18px;
+        padding: 14px;
+    }
+    footer {
+        max-width: 90vw;
+        padding: 20px;
+    }
+
+    .footer-item {
+        align-items: center;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    .btn2{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .footer a {
+        font-size: 14px;
+        color: white;
+    }
+
+    .footer-item {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+    .end {
+        margin-top: 20px;
+}
+}
